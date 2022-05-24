@@ -48,6 +48,7 @@
     .inline
     {
         display: inline;
+        margin-top: 6px;
     }
     
     .nav-menu
@@ -71,18 +72,28 @@
         color: #2d2d2d;
         margin-left: 20px;
     }
-    
-    .container-img h1
+
+    .container-img
     {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        font-weight: 500;
-        font-size: 100px;
+        background: url(../img/photos-top-header.png)  center;
+        width: 100%; 
+        height: 1080px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .txt_info
+    {
+        display: flex;
+        padding: 15%;
+        font-size: 84px;
         color: #fff;
+        text-align: inherit;
         text-shadow: 0px 15px 10px rgba(0, 0, 0, 0.25);
-        display: none;
     }
       
 .wapper
@@ -95,42 +106,53 @@
 
 .box-control
 {
-    height: 1080px;
     margin-top: -10px;
+    height: 1000px;
 }
 
 .au-container
 {
     display: block;
     background-color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.au-container h1
+{
+    color: #f4f4f4 ;
+    text-align: center;
+    padding: 50px;
+}
+
+.au-container p
+{
+    display: flex;
+    color: #f4f4f4;
+    font-size: 20px;
+    justify-content: center;
+    padding: 15%;
 }
 
 .contacts-content
-{
+{   
     display: block;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .svg-contacts
 {
-    margin: 25%;
+    display: flex;
+    margin: 0 auto;
+    padding: 30px;
     width: 50%;
     height: 50%;
-}
-
-@media (max-width: 1024px){
-    .wapper
-    {  
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 425px){
-    .logo h1
-    {
-        display: none;
-    }
 }
 
 footer
@@ -139,4 +161,42 @@ footer
     width: 100%;
     height: 50px;
     background-color: #2d2d2d;
+}
+
+.inline_bottom
+{
+    display: flex;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+@media (max-width: 1440px){
+    .wapper
+    {  
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contacts-content
+    {  
+    height: 300px;
+    }
+}
+
+@media (max-width: 768px){
+    .txt_info
+    {
+        font-size: 54px;
+    }
+    .nav-menu > li
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 425px){
+    .logo h1
+    {
+        display: none;
+    }
 }
