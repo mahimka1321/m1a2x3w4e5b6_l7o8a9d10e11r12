@@ -52,10 +52,10 @@
     
     .nav-menu
     {
-        margin-top: 10px;
-        margin-left: 1400px;
+        position: absolute;
+        right: 10%;
+        top: 10px;
     }
-    
     
     
     .nav-menu > li
@@ -111,10 +111,6 @@
     background-color: #f4f4f4;
 }
 
-a{
-    display: none;
-}
-
 .svg-contacts
 {
     margin: 25%;
@@ -127,6 +123,13 @@ a{
     {  
         display: grid;
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px){
+    .logo h1
+    {
+        display: none;
     }
 }
 
